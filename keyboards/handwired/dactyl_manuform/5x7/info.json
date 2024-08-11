@@ -1,12 +1,27 @@
 {
-    "keyboard_name": "Dactyl-Manuform (5x7)",
-    "manufacturer": "tshort",
+    "manufacturer": "Justin Rickert",
+    "keyboard_name": "summit_manuform",
+    "maintainer": "jlrick98",
+    "bootloader": "rp2040",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true
+    },
+    "matrix_pins": {
+        "cols": ["GP28", "GP27", "GP26", "GP22", "GP20", "GP23", "GP21"],
+        "rows": ["GP4", "GP5", "GP6", "GP7", "GP8", "GP9"]
+    },
+    "processor": "RP2040",
     "url": "",
-    "maintainer": "qmk",
     "usb": {
-        "vid": "0x444D",
-        "pid": "0x3537",
-        "device_version": "0.0.1"
+        "device_version": "1.0.0",
+        "pid": "0x0000",
+        "vid": "0xFEED"
     },
     "layouts": {
         "LAYOUT_5x7": {

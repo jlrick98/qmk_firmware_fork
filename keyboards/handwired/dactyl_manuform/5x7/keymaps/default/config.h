@@ -17,7 +17,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#define MASTER_LEFT
-//#define MASTER_RIGHT
+#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
 
-//#define EE_HANDS
+// Configure the global tapping term (default: 200ms)
+#define TAPPING_TERM 160
+
+// Prevent normal rollover on alphas from accidentally triggering mods.
+#define IGNORE_MOD_TAP_INTERRUPT
+
+// Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
+#define TAPPING_FORCE_HOLD
+
+// Allow per key config of tapping_term
+#define TAPPING_TERM_PER_KEY
+
+// Sets the unregister key delay for macros
+#define TAP_CODE_DELAY 10
